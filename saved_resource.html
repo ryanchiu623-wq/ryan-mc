@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)https://82f7c084-ed43-497a-b6f8-bd0dc87c500d.frame.claudeusercontent.com/_f/1787284309-e30b/?__frame_v=manifest.cedd5fcdd733d664.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><!--<base href="/_f/1787284309-e30b/">--><base href="."><script>window.__FRAME_PREAMBLE={"capabilities":{"artifact":"artifact.CPjnkS1k.js","assets":"assets.BkxVItX2.js","comments":"comments.GLuHR3zP.js","db":"db.CRhVHzSt.js","downloads":"downloads.C3GSvEDP.js","embed":"embed.qSh8AS5_.js","mcp":"mcp.D3B2EyQu.js","permissions":"permissions.BNySkLV5.js","room":"room.BgXZkiYR.js","sample":"sample.C7z_6W62.js","self":"artifact.CPjnkS1k.js","user":"user.BpKav-Rf.js"},"transforms":"_transforms.h3_8GSUa.js","comments":"_comments.kok9hxlq.js","translate":"_translate.5HCW4BJh.js"}</script><script>(function(){"use strict";var Y=["light","dark","system"],X=/^[A-Za-z0-9_-]{1,64}$/,x=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,G=new Set(["class","hidden","value","checked"]);function V(e){const t=e.toLowerCase();return t.startsWith("data-")||t.startsWith("aria-")||G.has(t)}var Z="http://www.w3.org/1999/xhtml",J="http://www.w3.org/2000/svg",Q=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),ee=new Set(["script","style"]);function te(e){const t=e.localName.toLowerCase();return e.namespaceURI===Z?!Q.has(t):e.namespaceURI===J?!ee.has(t):!1}function re(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_patch;if(t===null||typeof t!="object")return!1;const{seq:n,elements:a}=t;if(typeof n!="number"||!Number.isSafeInteger(n)||!Array.isArray(a)||a.length===0||a.length>64)return!1;for(const l of a){if(l===null||typeof l!="object")return!1;const s=l;if(typeof s.target!="string"||!X.test(s.target)||s.text!==void 0&&typeof s.text!="string")return!1;if(s.attrsSet!==void 0){if(s.attrsSet===null||typeof s.attrsSet!="object")return!1;for(const[c,u]of Object.entries(s.attrsSet))if(!x.test(c)||typeof u!="string")return!1}if(s.attrsRemoved!==void 0){if(!Array.isArray(s.attrsRemoved))return!1;for(const c of s.attrsRemoved)if(typeof c!="string"||!x.test(c))return!1}}return!0}function ne(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function se(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function ae(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const n=t.theme;return typeof n=="string"&&Y.includes(n)}var j="__frame_scroll",oe=150,ie=310,le=160,ce=3e4;function ue(){let e=0,t=!1,n=!1,a=!1,l=0,s=null;const c=i=>{try{sessionStorage.setItem(j,JSON.stringify({y:i}))}catch{}},u=()=>{if(clearTimeout(e),s===null)return;const i=s;s=null,c(i)},S=()=>{if(t){t=!1;return}n=!0,s=scrollY,clearTimeout(e),e=setTimeout(u,oe)};try{addEventListener("scroll",S,{passive:!0}),addEventListener("pagehide",u)}catch{}const v=()=>{let i;try{i=sessionStorage.getItem(j)}catch{return null}if(i===null)return null;let d;try{d=JSON.parse(i)}catch{d=null}const f=d?.y;if(!(typeof f=="number"&&Number.isFinite(f)&&f>=0)){try{sessionStorage.removeItem(j)}catch{}return null}return f};let w=!1;const m=i=>{try{const d=scrollY;scrollTo({top:i,left:0,behavior:"instant"}),l=i,a=!0,clearTimeout(e),s=null,c(i);const f=scrollY;f!==d&&(t=!0),f!==i&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===f){const _=v();m(_!==null?_:l)}}catch{}},{once:!0}))}catch{}},y=()=>{try{return!!location.hash}catch{return!0}};let g=!1;const E=()=>{try{if(g||innerWidth>ie||innerHeight>le)return;g=!0;const i=Date.now(),d=()=>{try{removeEventListener("resize",d)}catch{}if(Date.now()-i>ce||n||y())return;const f=v();m(f!==null?f:l)};addEventListener("resize",d)}catch{}};let r=!1,p=!1;return{restore(){if(r||(r=!0,y()))return;const i=v();i!==null&&(m(i),E())},promoted(){if(p||(p=!0,y()))return;const i=v();i!==null?(m(i),E()):a&&m(l)}}}var ye="modulepreload",ge=function(e){return"/"+e},be={},fe=function(t,n,a){let l=Promise.resolve();function s(c){const u=new Event("vite:preloadError",{cancelable:!0});if(u.payload=c,window.dispatchEvent(u),!u.defaultPrevented)throw c}return l.then(c=>{for(const u of c||[])u.status==="rejected"&&s(u.reason);return t().catch(s)})};(function(){const e=Object.defineProperty,t=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let a=0;for(let l=0;l<n.length;l++){const s=n[l];try{e(t,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[s]}catch{}try{e(t,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[s]=="function"&&a++}if(a&&window!==top)try{parent.postMessage({__frame_rtc_lockdown_failed:a},"*")}catch{}})();var pe=1e4,de=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function D(e){for(const t of de)if(t.endsWith(":*"))try{const n=new URL(e);if(`${n.protocol}//${n.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}var M=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),O=window.__FRAME_PREAMBLE?.transforms,N=window.__FRAME_PREAMBLE?.comments,B=window.__FRAME_PREAMBLE?.translate,L=/^[\w.-]+\.js$/;function T(e){return fe(()=>import("/_runtime/"+e),void 0)}function z(e,t){return{contract:e.contract,changes:new Set(e.changes??[]),flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:new Map,shellOrigin:t,mount:W,pipe:()=>({wrap:(n,a)=>(...l)=>{try{return a(...l)}catch(s){return Promise.reject(s)}}})}}var P=null,b=null;function q(e,t,n){try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var I=!1;function me(e,t){const n=[];for(const a of e.elements){const l=document.querySelector(`[data-id="${a.target}"]`);if(!l){parent.postMessage({__frame_patch_miss:{seq:e.seq}},t);return}if([...Object.keys(a.attrsSet??{}),...a.attrsRemoved??[]].some(s=>!V(s))){parent.postMessage({__frame_patch_miss:{seq:e.seq}},t);return}if(a.text!==void 0&&!te(l)){parent.postMessage({__frame_patch_miss:{seq:e.seq}},t);return}for(const[s,c]of Object.entries(a.attrsSet??{}))if(!$(l,s)){try{l.setAttribute(s,c)}catch{}H(l,s,c)}for(const s of a.attrsRemoved??[])$(l,s)||(l.removeAttribute(s),H(l,s,null));typeof a.text=="string"&&(l.textContent=a.text),n.push(a.target)}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:e.seq,targets:n}}))}catch{}}function H(e,t,n){if(!(e instanceof HTMLInputElement))return;const a=t.toLowerCase();a==="checked"?e.checked=n!==null:a==="value"&&e.type!=="file"&&(e.value=n??"")}function $(e,t){const n=t.toLowerCase(),a=e;return n==="data-id"||(n==="value"||n==="checked")&&(a.__artifactSecret===!0||/^(password|hidden|file)$/.test(a.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${e.getAttribute("autocomplete")??""} ${a.autocomplete??""}`))}function K(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,I=!0):I&&(delete t.dataset.theme,t.style.colorScheme="",I=!1)}var R=new Map;function _e(){let e;const t={u:new Promise(n=>{e=n}),r:n=>{t.done=!0,e(n)},done:!1,nulled:!1};return t}var he=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),W=(e,t)=>{const n=R.get(e);if(!n||n.done){n?.nulled&&b&&parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:e}},b);return}const a=typeof t=="function"?Object.setPrototypeOf(t,he):Object.assign(Object.create(null),t);typeof a.then=="function"&&delete a.then,n.r(Object.freeze(a))},U=Object.getOwnPropertyDescriptor(window,"claude");if(window!==top&&!(U&&U.writable===!1)){const e=O&&L.test(O)?T(O).catch(()=>{}):Promise.resolve(void 0),t=r=>{if(r.type==="auxclick"&&r.button!==1)return;const p=r.target,i=p&&p.closest?p.closest("a[href],area[href]"):null;if(!i)return;const d=i.getAttribute("href");if(!d)return;let f,_;try{f=new URL(d,document.baseURI),_=new URL(document.baseURI).origin}catch{return}if((f.protocol==="http:"||f.protocol==="https:")&&f.origin!==_){r.preventDefault();const h=(i.getAttribute("target")??"").toLowerCase(),C=r.type==="auxclick"||r.metaKey||r.ctrlKey||r.shiftKey||r.altKey||!["","_self","_top","_parent"].includes(h);parent.postMessage({__frame_nav:!0,url:f.href,newTab:C},"*")}};addEventListener("click",t,!0),addEventListener("auxclick",t,!0);const n={},a=r=>{r.isTrusted&&(n.pointer=!0)},l=r=>{r.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",l,{capture:!0,passive:!0}),e.then(r=>{r?.wireNav&&(r.wireNav(),removeEventListener("click",t,!0),removeEventListener("auxclick",t,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",l,!0),r.wireEngagement?.(n))});let s=null;try{s=ue()}catch{}const c=U?.value??{};q(window,"claude",c);for(const r of Object.keys(M)){if(c[r]!==void 0){q(c,r,c[r]);continue}R.set(r,_e())}if(c.use===void 0){const r=p=>{if(typeof p!="string"||!Object.hasOwn(M,p))return Promise.resolve(null);const i=R.get(p);return i?i.u:Promise.resolve(c[p]??null)};try{Object.defineProperty(c,"use",{value:r,writable:!0,configurable:!0,enumerable:!1})}catch{}}let u=null,S=null,v=0;const w=r=>{r.source!==parent||!D(r.origin)||ne(r.data)&&(u=r.data.__frame_init,b=r.origin,removeEventListener("message",w),clearTimeout(v),S?.())};addEventListener("message",w),parent.postMessage({__frame_connect:!0},"*");const m=new Promise(r=>{S=r,v=setTimeout(()=>{removeEventListener("message",w),r()},pe)}),y=document.readyState==="loading"?new Promise(r=>document.addEventListener("DOMContentLoaded",()=>r(),{once:!0})):Promise.resolve();y.then(()=>{try{s?.restore()}catch{}});const g={cb:null},E=r=>{if(!(r.source!==parent||!D(r.origin))&&se(r.data)){try{s?.promoted()}catch{}g.cb?.()}};addEventListener("message",E),m.then(async()=>{if(!u||!b){for(const o of R.values())o.nulled=!0,o.r(null);return}K(u.theme);const r=b;let p=!1,i=!1;addEventListener("message",o=>{if(o.source!==parent||o.origin!==r)return;ae(o.data)&&K(o.data.__frame_theme.theme),re(o.data)&&me(o.data.__frame_patch,r);const k=o.data?.__fc_mode;k&&typeof k=="object"&&!p&&N&&L.test(N)&&(p=!0,T(N).then(F=>F.install?.(r,k.on===!0)).catch(()=>{}));const A=o.data?.__ft_cmd;A&&typeof A=="object"&&!i&&B&&L.test(B)&&(i=!0,T(B).then(F=>F.install?.(r,A)).catch(()=>{}))});const d=Object.keys(u.capabilities??{}).filter(o=>Object.hasOwn(M,o)).map(o=>[o,M[o]]).filter(o=>typeof o[1]=="string"&&L.test(o[1])),f=await Promise.allSettled(d.map(([,o])=>T(o))),_=await e,h=b;if(_?.buildBoot||parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},h),_?.buildBoot)try{P=_.buildBoot(u,_.TRANSFORMS??{},{shellOrigin:h,mount:W},o=>parent.postMessage({__frame_cap_telemetry:o},h))}catch{parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},h),P=z(u,h)}else P=z(u,h);const C=o=>parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:o}},h),ve=P;f.forEach((o,k)=>{const A=d[k][0];if(o.status!=="fulfilled"){C(A);return}try{o.value?.install?.(ve)}catch{C(A)}});for(const o of R.values())o.done||(o.nulled=!0,o.r(null));await y,parent.postMessage({__frame_ready:!0},b),e.then(o=>o?.installSizeReporter?.(h,g))})}})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>ryanchiu623 伺服器</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="./css2">
+
+<style>
+  /* Light palette — cool paper with a green-grey bias, oxidised-copper accent.
+     Every colour lives here so both themes stay a consistent set. */
+  :root {
+    --ground:      #EFF2F0;
+    --surface:     #FFFFFF;
+    --surface-sunk:#E6EBE8;
+    --line:        #D3DBD7;
+    --line-strong: #B9C4BF;
+    --ink:         #12191B;
+    --ink-soft:    #46534F;
+    --ink-faint:   #6E7C77;
+    --accent:      #1F7D69;
+    --accent-soft: #E2F0EB;
+    --warn:        #A9600F;
+    --warn-soft:   #F7ECDC;
+    --shadow:      0 1px 2px rgba(18, 25, 27, .06), 0 8px 24px -16px rgba(18, 25, 27, .28);
+
+    --font-display: "Archivo", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    --font-body:    "Newsreader", "Noto Sans TC", "Microsoft JhengHei", Georgia, serif;
+    --font-mono:    "IBM Plex Mono", "Noto Sans TC", ui-monospace, Consolas, monospace;
+  }
+
+  /* Dark: deepslate. Guarded so an explicit light choice still wins. */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0E1417;
+      --surface:     #161F22;
+      --surface-sunk:#111A1D;
+      --line:        #26343A;
+      --line-strong: #37484E;
+      --ink:         #E7EEEB;
+      --ink-soft:    #A9B8B4;
+      --ink-faint:   #7C8C88;
+      --accent:      #56C5A6;
+      --accent-soft: #14302B;
+      --warn:        #DFA05A;
+      --warn-soft:   #2E2418;
+      --shadow:      0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -18px rgba(0, 0, 0, .8);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:      #0E1417;
+    --surface:     #161F22;
+    --surface-sunk:#111A1D;
+    --line:        #26343A;
+    --line-strong: #37484E;
+    --ink:         #E7EEEB;
+    --ink-soft:    #A9B8B4;
+    --ink-faint:   #7C8C88;
+    --accent:      #56C5A6;
+    --accent-soft: #14302B;
+    --warn:        #DFA05A;
+    --warn-soft:   #2E2418;
+    --shadow:      0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -18px rgba(0, 0, 0, .8);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: clamp(2rem, 6vw, 4.5rem) clamp(1.1rem, 4vw, 2rem) 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 5vw, 3.25rem);
+  }
+
+  /* ---- masthead ---- */
+  .masthead { display: flex; flex-direction: column; gap: .5rem; }
+
+  .eyebrow {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: .74rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.4rem, 7vw, 3.6rem);
+    letter-spacing: -.02em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+
+  .lede {
+    margin: .35rem 0 0;
+    max-width: 34em;
+    font-size: 1.09rem;
+    color: var(--ink-soft);
+  }
+
+  /* ---- section scaffolding ---- */
+  .section { display: flex; flex-direction: column; gap: 1rem; }
+
+  .section > h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.02rem;
+    letter-spacing: .01em;
+    color: var(--ink-faint);
+    padding-bottom: .55rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ---- edition cards: two genuinely different ways in ---- */
+  .editions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.4rem 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+  }
+
+  .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; }
+
+  .card h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -.01em;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: .7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: .2rem .5rem;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    white-space: nowrap;
+  }
+
+  .field { display: flex; flex-direction: column; gap: .3rem; }
+
+  .field-label {
+    font-family: var(--font-mono);
+    font-size: .72rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .copy-row { display: flex; gap: .5rem; align-items: stretch; }
+
+  .value {
+    flex: 1;
+    min-width: 0;
+    font-family: var(--font-mono);
+    font-size: .96rem;
+    background: var(--surface-sunk);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: .55rem .7rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+
+  .copy {
+    flex: none;
+    font-family: var(--font-display);
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--surface);
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 7px;
+    padding: 0 .85rem;
+    cursor: pointer;
+    transition: opacity .15s ease;
+  }
+  .copy:hover { opacity: .85; }
+  .copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .copy[data-copied="yes"] { background: var(--ink); border-color: var(--ink); }
+
+  .note { margin: 0; font-size: .95rem; color: var(--ink-soft); }
+  .note strong { color: var(--ink); font-weight: 500; }
+
+  /* ---- map ---- */
+  .map-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 1.15rem 1.3rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow);
+  }
+  .map-link:hover { border-color: var(--line-strong); border-left-color: var(--accent); }
+  .map-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .map-link h3 { margin: 0 0 .15rem; font-family: var(--font-display); font-size: 1.15rem; }
+  .map-link p { margin: 0; font-size: .95rem; color: var(--ink-soft); }
+  .map-cta { font-family: var(--font-mono); font-size: .85rem; color: var(--accent); white-space: nowrap; }
+
+  /* ---- troubleshooting ---- */
+  .faq { display: flex; flex-direction: column; gap: .55rem; }
+
+  .faq details {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: .8rem 1.05rem;
+  }
+  .faq summary {
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after {
+    content: "+";
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+  .faq details[open] summary::after { content: "–"; }
+  .faq summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  .faq details p { margin: .65rem 0 .1rem; font-size: .97rem; color: var(--ink-soft); }
+  .faq code {
+    font-family: var(--font-mono);
+    font-size: .88em;
+    background: var(--surface-sunk);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: .08em .35em;
+  }
+
+  /* ---- callout ---- */
+  .callout {
+    background: var(--warn-soft);
+    border: 1px solid var(--warn);
+    border-radius: 9px;
+    padding: .95rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+  .callout h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: .95rem;
+    letter-spacing: .01em;
+    color: var(--warn);
+  }
+  .callout p { margin: 0; font-size: .95rem; color: var(--ink-soft); }
+
+  /* ---- spec table ---- */
+  .specs {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .95rem;
+  }
+  .specs th, .specs td {
+    text-align: left;
+    padding: .5rem .75rem .5rem 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .specs th {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    width: 9.5rem;
+    white-space: nowrap;
+  }
+  .specs td { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .specs tr:last-child th, .specs tr:last-child td { border-bottom: none; }
+
+  footer {
+    color: var(--ink-faint);
+    font-size: .85rem;
+    font-family: var(--font-mono);
+    border-top: 1px solid var(--line);
+    padding-top: 1.1rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <p class="eyebrow">Minecraft Server</p>
+    <h1>ryanchiu623</h1>
+    <p class="lede">Java 版和基岩版都進得來，玩的是同一個世界。挑你的版本，複製位址，開玩。</p>
+  </header>
+
+  <section class="section">
+    <h2>連線位址</h2>
+    <div class="editions">
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Java 版</h3>
+          <span class="tag">需要 26.2</span>
+        </div>
+        <div class="field">
+          <span class="field-label">伺服器位址</span>
+          <div class="copy-row">
+            <span class="value" id="java-addr">mc.ryanchiu623.dpdns.org</span>
+            <button class="copy" type="button" data-target="java-addr">複製</button>
+          </div>
+        </div>
+        <p class="note">不用填連接埠，直接貼位址就好。你的遊戲版本<strong>必須正好是 26.2</strong>，其他版本會被擋在登入畫面。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>基岩版</h3>
+          <span class="tag">免 Java 帳號</span>
+        </div>
+        <div class="field">
+          <span class="field-label">伺服器位址</span>
+          <div class="copy-row">
+            <span class="value" id="be-addr">bedrock.ryanchiu623.dpdns.org</span>
+            <button class="copy" type="button" data-target="be-addr">複製</button>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field-label">連接埠</span>
+          <div class="copy-row">
+            <span class="value" id="be-port">11297</span>
+            <button class="copy" type="button" data-target="be-port">複製</button>
+          </div>
+        </div>
+        <p class="note">手機、主機、Windows 版都可以。用你原本的 Xbox 帳號登入即可，<strong>不需要另外買 Java 版</strong>。</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>世界地圖</h2>
+    <a class="map-link" href="https://mc-map-7yu.pages.dev/" target="_blank" rel="noopener">
+      <span>
+        <h3>3D 即時地圖</h3>
+        <p>從空中俯瞰整個世界，找路、找基地、看看別人蓋了什麼。每 30 分鐘更新一次。</p>
+      </span>
+      <span class="map-cta">開啟地圖 →</span>
+    </a>
+  </section>
+
+  <section class="section">
+    <h2>連不上？</h2>
+    <div class="faq">
+
+      <details>
+        <summary>Java 版顯示 Outdated client 或 Outdated server</summary>
+        <p>版本不對。伺服器跑的是 <code>26.2</code>，客戶端也必須是 <code>26.2</code>。在啟動器裡新增一個 26.2 的安裝設定再進來。</p>
+      </details>
+
+      <details>
+        <summary>基岩版一直連線逾時</summary>
+        <p>多半是連接埠沒填。基岩版的「新增伺服器」畫面有<strong>兩個</strong>欄位，位址填 <code>bedrock.ryanchiu623.dpdns.org</code>，連接埠要另外填 <code>11297</code>，不能留空。</p>
+      </details>
+
+      <details>
+        <summary>出生點附近放不了方塊</summary>
+        <p>出生點周圍 20 格是保護區，只有管理員動得了。往外走一段距離就正常了，或是跟 Ryan 說一聲。</p>
+      </details>
+
+      <details>
+        <summary>本來好好的，突然全部連不上</summary>
+        <p>伺服器跑在家用電腦上，沒有 24 小時開機。連不上通常代表主機關了或重開中，等一下再試，或直接問 Ryan。</p>
+      </details>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>伺服器資訊</h2>
+    <table class="specs">
+      <tbody>
+        <tr><th>版本</th><td>Paper 26.2（Java 版客戶端需 26.2）</td></tr>
+        <tr><th>模式</th><td>生存 · 難度 Easy · 非極限模式</td></tr>
+        <tr><th>人數上限</th><td>20 人</td></tr>
+        <tr><th>跨版本</th><td>Geyser + Floodgate，基岩版玩家與 Java 版玩家同世界</td></tr>
+        <tr><th>出生點保護</th><td>半徑 20 格</td></tr>
+        <tr><th>生電技術</th><td>已開啟原版行為：TNT 複製、活塞複製、地獄基岩破壞</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="callout">
+    <h3>目前是內測階段</h3>
+    <p>位址請不要外流。之後可能會開白名單，屆時沒被加入的帳號就進不來了。</p>
+  </div>
+
+  <footer>ryanchiu623.dpdns.org · 自架伺服器</footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.dataset.target);
+      if (!el) return;
+      var text = el.textContent.trim();
+      var done = function () {
+        var original = btn.textContent;
+        btn.textContent = '已複製';
+        btn.dataset.copied = 'yes';
+        setTimeout(function () {
+          btn.textContent = original;
+          delete btn.dataset.copied;
+        }, 1600);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } else {
+        fallback();
+      }
+
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) { /* selection is left for manual copy */ }
+        document.body.removeChild(ta);
+      }
+    });
+  });
+</script>
+
+</body></html>
