@@ -4,241 +4,216 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ryan mc · Minecraft 伺服器</title>
-<meta name="description" content="Ryan mc 自架 Minecraft 伺服器：Java 版和基岩版一起玩同一個世界。連線位址、3D 地圖、伺服器規則都在這裡。">
-<meta name="theme-color" content="#1F7D69">
+<meta name="description" content="Ryan mc：一台跑在家裡電腦上的 Minecraft 伺服器，Java 版和基岩版玩同一個世界。連線位址、即時狀態、3D 地圖和規則都在這裡。">
+<meta name="theme-color" content="#ddd6c6">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ryan mc · Minecraft 伺服器">
-<meta property="og:description" content="Java 版和基岩版一起玩同一個世界。複製位址，開玩。">
+<meta property="og:description" content="Java 版和基岩版玩同一個世界。複製位址，開玩。">
 <meta property="og:url" content="https://ryanchiu623-wq.github.io/ryan-mc/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%231F7D69'/%3E%3Crect x='3' y='3' width='4' height='4' fill='%23E2F0EB'/%3E%3Crect x='9' y='3' width='4' height='4' fill='%23E2F0EB'/%3E%3Crect x='6' y='8' width='4' height='5' fill='%23E2F0EB'/%3E%3C/svg%3E">
+<meta property="og:image" content="https://ryanchiu623-wq.github.io/ryan-mc/assets/spawn-wide.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%234f6238'/%3E%3Crect x='3' y='3' width='4' height='4' fill='%23ddd6c6'/%3E%3Crect x='9' y='3' width='4' height='4' fill='%23ddd6c6'/%3E%3Crect x='6' y='8' width='4' height='5' fill='%23ddd6c6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
-
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=erode@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+<a class="skip" href="#join">跳到連線位址</a>
 
-<div class="page">
+<header class="hero">
+  <nav class="toprow" aria-label="網站導覽">
+    <a class="left" href="rules.html">規則</a>
+    <a class="wordmark" href="./" aria-current="page">Ryan mc</a>
+    <a class="right" href="https://map.ryanchiu623.dpdns.org" target="_blank" rel="noopener">3D 地圖</a>
+  </nav>
 
-  <div class="topnav">
-    <a class="brand" href="./">Ryan mc</a>
-    <nav aria-label="網站導覽">
-      <a href="./" aria-current="page">連線</a>
-      <a href="rules.html">規則</a>
-      <a href="https://map.ryanchiu623.dpdns.org" target="_blank" rel="noopener">地圖</a>
-    </nav>
+  <div class="band">
+    <figure class="square">
+      <video src="assets/machine-orbit.webm" poster="assets/machine-square.jpg" width="800" height="800" autoplay muted loop playsinline aria-label="繞著伺服器裡的竹子農場和自動合成機慢慢轉一圈"></video>
+    </figure>
+    <div class="line">
+      <div class="track">
+        <h1>Ryan mc</h1><span class="dot" aria-hidden="true"></span><span class="copyname" data-t="Ryan mc" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="copyname" data-t="Ryan mc" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="copyname" data-t="Ryan mc" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="copyname" data-t="Ryan mc" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="copyname" data-t="Ryan mc" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="copyname" data-t="Ryan mc" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="copyname" data-t="Ryan mc" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="line paper" aria-hidden="true">
+      <div class="track">
+        <span class="copyname" data-t="Ryan mc"></span><span class="dot"></span><span class="copyname" data-t="Ryan mc"></span><span class="dot"></span><span class="copyname" data-t="Ryan mc"></span><span class="dot"></span><span class="copyname" data-t="Ryan mc"></span><span class="dot"></span><span class="copyname" data-t="Ryan mc"></span><span class="dot"></span><span class="copyname" data-t="Ryan mc"></span><span class="dot"></span><span class="copyname" data-t="Ryan mc"></span><span class="dot"></span><span class="copyname" data-t="Ryan mc"></span><span class="dot"></span>
+      </div>
+    </div>
   </div>
 
-  <header class="masthead">
-    <p class="eyebrow">Minecraft Server</p>
-    <h1>Ryan mc</h1>
-    <p class="lede">Java 版和基岩版都進得來，玩的是同一個世界。挑你的版本，複製位址，開玩。</p>
-    <div class="status" id="status" data-state="checking" role="status" aria-live="polite">
-      <span class="status-main"><span class="dot" aria-hidden="true"></span><span id="status-text">檢查伺服器狀態中…</span></span>
-      <span class="status-meta" id="status-meta"></span>
-    </div>
-  </header>
+  <div class="about">
+    <p>一台跑在家裡電腦上的 Minecraft 伺服器。Java 版和基岩版，玩的是同一個世界。</p>
+    <p class="status" role="status" aria-live="polite"><span class="lamp" aria-hidden="true"></span><span id="status-text">電腦開著才連得上，正在查現在有沒有開</span></p>
+  </div>
 
-  <section class="section" aria-labelledby="h-join">
-    <h2 id="h-join">連線位址</h2>
-    <div class="editions">
+  <div class="bottomrow">
+    <span>介紹制，不公開招募</span>
+    <a class="button" href="#join">拿連線位址</a>
+  </div>
+</header>
 
-      <article class="card">
-        <div class="card-head">
-          <h3>Java 版<small>電腦</small></h3>
-          <span class="tag">需要 26.3</span>
-        </div>
-        <div class="field">
-          <span class="field-label">伺服器位址</span>
-          <div class="copy-row">
-            <span class="value" id="java-addr">mc.ryanchiu623.dpdns.org</span>
-            <button class="copy" type="button" data-target="java-addr">複製</button>
-          </div>
-        </div>
-        <p class="note">直接貼上位址就好，<strong>不用填連接埠</strong>。遊戲版本<strong>必須正好是 26.3</strong>，其他版本會被擋在登入畫面。</p>
-      </article>
+<main>
 
-      <article class="card">
-        <div class="card-head">
-          <h3>基岩版<small>手機・平板・主機・Windows</small></h3>
-          <span class="tag">需要 26.40 以上</span>
+  <section id="join" class="wrap" aria-labelledby="h-join">
+    <div class="grid diag">
+      <figure class="p1" data-reveal>
+        <img src="assets/world-map.jpg" width="600" height="800" alt="伺服器世界的俯視地圖：河流、草原、莽原和櫻花林" loading="lazy">
+        <figcaption>整個世界的俯視圖，中間那塊長方形是竹子農場。</figcaption>
+      </figure>
+      <h2 id="h-join">怎麼進來</h2>
+      <div class="t1 stage" data-reveal>
+        <p><span class="run">先找人帶你。</span>這台是介紹制，沒有公開招募。找一個已經在玩的朋友，請他跟 Ryan 說一聲，Ryan 把你加進白名單之後就能進來。</p>
+        <p>介紹人會先把<a href="rules.html">伺服器規則</a>給你看，花五分鐘看完再進來。</p>
+      </div>
+
+      <figure class="p2" data-reveal>
+        <img src="assets/spawn-house.jpg" width="800" height="800" alt="出生點旁邊的木屋和通往農場的鐵軌" loading="lazy">
+        <figcaption>出生點旁邊的木屋。</figcaption>
+      </figure>
+      <div class="t2 stage" data-reveal>
+        <p><span class="run">用電腦玩 Java 版，</span>貼上位址就好，不用填連接埠。遊戲版本必須正好是 26.3，其他版本會被擋在登入畫面。</p>
+        <div class="addr">
+          <span class="label">Java 版伺服器位址</span>
+          <span class="value" id="java-addr">mc.ryanchiu623.dpdns.org</span>
+          <button class="copy" type="button" data-target="java-addr">複製</button>
         </div>
-        <div class="field">
-          <span class="field-label">伺服器位址</span>
-          <div class="copy-row">
+      </div>
+
+      <figure class="p3" data-reveal>
+        <img src="assets/river.jpg" width="1440" height="900" alt="世界裡的一條河，兩岸是草原和莽原" loading="lazy">
+        <figcaption>出生點北邊的河。</figcaption>
+      </figure>
+      <div class="t3 stage" data-reveal>
+        <p><span class="run">用手機、平板、主機或 Windows 玩基岩版，</span>要填位址和連接埠兩格，連接埠不能留空。遊戲要更新到 26.40 以上，用原本的 Xbox 帳號登入，不需要另外買 Java 版。</p>
+        <div class="pair">
+          <div class="addr">
+            <span class="label">基岩版伺服器位址</span>
             <span class="value" id="be-addr">bedrock.ryanchiu623.dpdns.org</span>
             <button class="copy" type="button" data-target="be-addr">複製</button>
           </div>
-        </div>
-        <div class="field">
-          <span class="field-label">連接埠</span>
-          <div class="copy-row">
+          <div class="addr">
+            <span class="label">連接埠</span>
             <span class="value" id="be-port">443</span>
             <button class="copy" type="button" data-target="be-port">複製</button>
           </div>
         </div>
-        <a class="button" href="minecraft://?addExternalServer=Ryan%20mc%7Cbedrock.ryanchiu623.dpdns.org%3A443">在 Minecraft 裡加入這台伺服器 →</a>
-        <p class="note">有裝基岩版的裝置按上面的按鈕，會直接把伺服器加進清單。用原本的 Xbox 帳號登入就好，<strong>不需要另外買 Java 版</strong>。</p>
-      </article>
-
+        <p>在有裝基岩版的裝置上按這個按鈕，會直接把伺服器加進清單：</p>
+        <a class="button quiet" href="minecraft://?addExternalServer=Ryan%20mc%7Cbedrock.ryanchiu623.dpdns.org%3A443">在 Minecraft 裡加入 Ryan mc</a>
+      </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="h-map">
-    <h2 id="h-map">世界地圖</h2>
-    <a class="map-link" href="https://map.ryanchiu623.dpdns.org" target="_blank" rel="noopener">
-      <span>
-        <h3>3D 即時地圖</h3>
-        <p>從空中俯瞰整個世界，找路、找基地、看看別人蓋了什麼。地圖會跟著遊戲自動更新，有人走過的地方才會出現。</p>
-      </span>
-      <span class="map-cta">開啟地圖 →</span>
-    </a>
+  <section class="world" aria-labelledby="h-world">
+    <h2 id="h-world"><span>同一個</span><span>世界</span></h2>
+    <div class="prints">
+      <figure class="print a"><img src="assets/cherry.jpg" width="660" height="880" alt="山坡上的櫻花樹和河灣" loading="lazy"></figure>
+      <figure class="print b"><img src="assets/bamboo-farm.jpg" width="600" height="800" alt="玻璃罩住的竹子農場，旁邊是鐵軌" loading="lazy"></figure>
+      <figure class="print c"><img src="assets/spawn-wide.jpg" width="1408" height="880" alt="出生點一帶的草原和莽原" loading="lazy"></figure>
+    </div>
+    <p class="note">Java 版和基岩版的玩家走在同一片地上。整個世界都在 3D 即時地圖上，有人走過的地方才會出現。<br><a href="https://map.ryanchiu623.dpdns.org" target="_blank" rel="noopener">開啟 3D 地圖</a></p>
   </section>
 
-  <section class="section" aria-labelledby="h-cmd">
-    <h2 id="h-cmd">常用指令</h2>
-    <div class="commands">
-      <div class="cmd"><code>/spawn</code><p>回到出生點。</p></div>
-      <div class="cmd"><code>/menu</code><p>打開伺服器選單。</p></div>
-      <div class="cmd"><code>/mobile</code><p>隨身工作台：合成、熔爐、鐵砧等。</p></div>
+  <section class="wrap" aria-labelledby="h-facts">
+    <div class="grid facts">
+      <h2 id="h-facts"><span>生電可以玩，</span><span>但每樣都有上限</span></h2>
+      <p class="intro">TNT 複製、活塞複製和破基岩都照原版開著。伺服器跑在家用電腦上，一台機器卡住，所有人一起卡，所以規則裡寫了幾個硬上限。</p>
+      <figure class="side" data-reveal>
+        <img src="assets/redstone.jpg" width="560" height="700" alt="農場底下的紅石線路、漏斗和合成器" loading="lazy">
+        <figcaption class="caption">農場底下的合成器和漏斗。</figcaption>
+      </figure>
+      <span class="tag">設定</span>
+      <table>
+        <tbody>
+          <tr><th scope="row">版本</th><td>Java 26.3、基岩 26.40 以上</td><td class="v">Paper</td></tr>
+          <tr><th scope="row">模式</th><td>生存</td><td class="v">難度 Easy</td></tr>
+          <tr><th scope="row">死亡</th><td>不掉落物品</td><td class="v">開啟</td></tr>
+          <tr><th scope="row">PvP</th><td>玩家互打</td><td class="v">開啟</td></tr>
+          <tr class="gap"><th scope="row">常載區塊</th><td>每人</td><td class="v">4 個</td></tr>
+          <tr><th scope="row">單一農場</th><td>常駐實體</td><td class="v">150 隻</td></tr>
+          <tr><th scope="row">村民交易所</th><td>村民</td><td class="v">30 名</td></tr>
+          <tr><th scope="row">連續漏斗</th><td>單段</td><td class="v">64 格</td></tr>
+          <tr class="gap"><th scope="row">新蓋的地</th><td>離別人建築</td><td class="v">100 格</td></tr>
+          <tr><th scope="row">出生點</th><td>保護半徑</td><td class="v">20 格</td></tr>
+          <tr><th scope="row">備份</th><td>每天 04:00</td><td class="v">留 7 天</td></tr>
+          <tr><th scope="row">重啟</th><td>提前廣播</td><td class="v">5 分鐘</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="h-faq">
-    <h2 id="h-faq">連不上？</h2>
-    <div class="faq">
-
-      <details>
-        <summary>Java 版顯示 Outdated client 或 Outdated server</summary>
-        <p>版本不對。伺服器跑的是 <code class="inline">26.3</code>，客戶端也必須是 <code class="inline">26.3</code>。在啟動器裡新增一個 26.3 的安裝設定再進來。</p>
-      </details>
-
-      <details>
-        <summary>Java 版顯示 Connection timed out</summary>
-        <p>先確認上面的狀態燈是綠的。如果伺服器有開還是逾時，可能是你的網路走 IPv6，換個網路（例如手機熱點）再試一次。</p>
-      </details>
-
-      <details>
-        <summary>基岩版一直連不上</summary>
-        <p>新增伺服器的畫面有<strong>兩個</strong>欄位：位址填 <code class="inline">bedrock.ryanchiu623.dpdns.org</code>，連接埠填 <code class="inline">443</code>，不能留空。遊戲要更新到 26.40 以上；如果剛出新版本連不上，等伺服器跟上更新再試。</p>
-      </details>
-
-      <details>
-        <summary>出生點附近放不了方塊</summary>
-        <p>出生點周圍 20 格是保護區，只有管理員動得了。往外走一段距離就正常了，或是跟 Ryan 說一聲。</p>
-      </details>
-
-      <details>
-        <summary>本來好好的，突然全部連不上</summary>
-        <p>伺服器跑在家用電腦上，沒有 24 小時開機。上面的狀態燈是紅的就代表主機關了或重開中，等一下再試，或直接問 Ryan。</p>
-      </details>
-
+  <section class="close" aria-labelledby="h-close">
+    <h2 id="h-close"><span>規則</span><span>很短</span></h2>
+    <div class="base">
+      <p>小伺服器，寫下來的都會執行。帶朋友進來之前，先讓他看完。</p>
+      <a class="button" href="rules.html">閱讀伺服器規則</a>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="h-spec">
-    <h2 id="h-spec">伺服器資訊</h2>
-    <table class="specs">
-      <tbody>
-        <tr><th>版本</th><td>Paper 26.3（Java 版客戶端需 26.3）</td></tr>
-        <tr><th>模式</th><td>生存 · 難度 Easy · 非極限模式</td></tr>
-        <tr><th>人數上限</th><td>20 人（Java 版和基岩版合計）</td></tr>
-        <tr><th>死亡</th><td>不掉落物品（死亡不掉落已開啟）</td></tr>
-        <tr><th>PvP</th><td>開啟</td></tr>
-        <tr><th>跨版本</th><td>Geyser + Floodgate，基岩版玩家與 Java 版玩家同世界</td></tr>
-        <tr><th>出生點保護</th><td>半徑 20 格</td></tr>
-        <tr><th>生電技術</th><td>已開啟原版行為：TNT 複製、活塞複製、基岩破壞</td></tr>
-      </tbody>
-    </table>
+  <section class="wrap" aria-labelledby="h-qa">
+    <div class="grid qa">
+      <h2 id="h-qa">連不上？</h2>
+
+      <h3>Java 版說版本太舊或太新</h3>
+      <div class="a"><p>畫面寫 Outdated client 或 Outdated server，就是版本不對。伺服器跑 26.3，客戶端也必須是 26.3。在啟動器裡新增一個 26.3 的安裝設定再進來。</p></div>
+
+      <h3>Java 版一直連線逾時</h3>
+      <div class="a"><p>先看最上面的狀態是不是「現在開著」。有開還是逾時，可能是你的網路走 IPv6，換個網路（例如手機熱點）再試一次。</p></div>
+
+      <h3>基岩版一直連不上</h3>
+      <div class="a"><p>新增伺服器的畫面有兩格：位址填 bedrock.ryanchiu623.dpdns.org，連接埠填 443，不能留空。遊戲要 26.40 以上；剛出新版本時連不上，等伺服器跟上更新再試。</p></div>
+
+      <h3>出生點附近放不了方塊</h3>
+      <div class="a"><p>出生點周圍 20 格是保護區，只有管理員動得了。往外走一段就正常了，要在那裡蓋東西先問 Ryan。</p></div>
+
+      <h3>本來好好的，突然全部斷線</h3>
+      <div class="a"><p>伺服器跑在家用電腦上，沒有 24 小時開。計畫中的重啟會在遊戲裡提前 5 分鐘廣播；當機的話，看門狗每 5 分鐘會自動把它拉起來，等一下再試，或在 Discord 問。</p></div>
+
+      <h3>進去之後有哪些指令？</h3>
+      <div class="a">
+        <p>最常用的三個：</p>
+        <ul>
+          <li><code>/spawn</code> 回到出生點</li>
+          <li><code>/menu</code> 打開伺服器選單</li>
+          <li><code>/mobile</code> 隨身工作台：合成、熔爐、鐵砧</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <div class="callout rules-cta">
+</main>
+
+<footer>
+  <div class="grid cols">
     <div>
-      <h3>進來之前請先看規則</h3>
-      <p>這台是介紹制的小伺服器，沒有公開招募。要帶朋友進來先跟 Ryan 說一聲，也請不要把位址貼給不認識的人。</p>
+      <p>連線</p>
+      <ul><li>Java：mc.ryanchiu623.dpdns.org</li><li>基岩：bedrock.ryanchiu623.dpdns.org，連接埠 443</li></ul>
     </div>
-    <a class="button" href="rules.html">閱讀伺服器規則 →</a>
+    <div>
+      <p>頁面</p>
+      <ul><li><a href="./">首頁</a></li><li><a href="rules.html">伺服器規則</a></li><li><a href="https://map.ryanchiu623.dpdns.org" target="_blank" rel="noopener">3D 即時地圖</a></li></ul>
+    </div>
+    <div>
+      <p>主機</p>
+      <ul><li>每天 04:00 備份，留 7 天</li><li>看門狗每 5 分鐘檢查一次</li><li>重啟前 5 分鐘廣播</li></ul>
+    </div>
+    <div>
+      <p>找人</p>
+      <ul><li>伺服器主：Ryan</li><li>有問題直接在 Discord 問</li></ul>
+    </div>
   </div>
+  <div></div>
+  <div class="name" aria-hidden="true">
+    <svg viewBox="0 0 1000 205" role="presentation"><text x="0" y="168" font-size="232" textLength="1000" lengthAdjust="spacingAndGlyphs">Ryan mc</text></svg>
+  </div>
+  <p class="legal">Ryan mc 是私人伺服器，不是 Mojang 或 Microsoft 的官方服務。頁面上的畫面取自本伺服器的 3D 地圖。</p>
+</footer>
 
-  <footer>
-    <span>ryanchiu623.dpdns.org · 自架伺服器</span>
-    <a href="rules.html">伺服器規則</a>
-  </footer>
-
-</div>
-
-<script>
-  /* ---- copy buttons ---- */
-  document.querySelectorAll('.copy').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var el = document.getElementById(btn.dataset.target);
-      if (!el) return;
-      var text = el.textContent.trim();
-      var done = function () {
-        btn.textContent = '已複製';
-        btn.dataset.copied = 'yes';
-        setTimeout(function () {
-          btn.textContent = '複製';
-          delete btn.dataset.copied;
-        }, 1600);
-      };
-      var fallback = function () {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        ta.setAttribute('readonly', '');
-        ta.style.position = 'fixed';
-        ta.style.opacity = '0';
-        document.body.appendChild(ta);
-        ta.select();
-        try { document.execCommand('copy'); done(); } catch (e) { /* the text stays selected for a manual copy */ }
-        document.body.removeChild(ta);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(done, fallback);
-      } else {
-        fallback();
-      }
-    });
-  });
-
-  /* ---- live status ----
-     mcstatus.io follows the SRV record and pings the server the same way a
-     player's client does, so "up" here means players can really get in. */
-  (function () {
-    var box = document.getElementById('status');
-    var text = document.getElementById('status-text');
-    var meta = document.getElementById('status-meta');
-    var url = 'https://api.mcstatus.io/v2/status/java/mc.ryanchiu623.dpdns.org';
-
-    function show(state, main, detail) {
-      box.dataset.state = state;
-      text.textContent = main;
-      meta.textContent = detail || '';
-    }
-
-    function check() {
-      fetch(url, { cache: 'no-store' })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(function (d) {
-          var time = new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' });
-          if (d.online) {
-            var p = d.players || {};
-            show('up', '伺服器開著 · ' + (p.online != null ? p.online : '?') + ' / ' + (p.max != null ? p.max : '?') + ' 人在線上',
-                 (d.version && d.version.name_clean ? d.version.name_clean + ' · ' : '') + time + ' 更新');
-          } else {
-            show('down', '伺服器目前沒開', time + ' 更新');
-          }
-        })
-        .catch(function () {
-          show('checking', '暫時查不到伺服器狀態', '');
-        });
-    }
-
-    check();
-    setInterval(check, 60000);
-  })();
-</script>
-
+<script src="site.js"></script>
 </body>
 </html>
